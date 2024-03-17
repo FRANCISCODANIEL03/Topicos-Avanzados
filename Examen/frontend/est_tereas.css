@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    background-color: #000;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    background: #000;
+    box-shadow: 0 0 50px #0ef;
+    border-radius: 40px;
+    height: 340px;
+    width:350px;
+}
+
+form:hover{
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+input{
+    margin-left: 15px;
+    width:250px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5PX;
+    color:#fff;
+    border-radius: 10px;
+}
+button{
+    margin-top: 15px;
+    margin-left: 10px;
+   width: 150px;
+   height: 40px;
+   background: #0ef;
+   box-shadow: 0 0 10px #0ef;
+   font-size: 16px;
+   color: #000;
+   font-weight: 500;
+   cursor: pointer;
+   border-radius: 10px;
+   border: none;
+}
+h1,h4,h3{
+    color:#fff;
+}
+input{
+    margin-top: 10px;
+    width: 300px;
+    height:35px;
+    color:#fff;
+    background: transparent;
+    border: 2px #fff solid;
+}
+li{
+    color:#fff;
+}
+#listaTareas{
+    margin-left: 40px;
+}
+.listaTareas:hover{
+    animation:animate 1s linear infinite;
+}
+#tareas{
+    box-shadow:0 0  10px #0ef;
+    border:2px #fff solid;
+    border-radius: 5px;
+    padding: 10px ;
+}
+
+
