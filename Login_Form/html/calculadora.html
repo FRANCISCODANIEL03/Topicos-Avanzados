@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Login_Form/css/estilo3.css">
+</head>
+<body>
+    <form id="formc">
+        <h1>Calculadora</h1>
+        
+        <div class="sig">
+            <input  type="number" id="primn" placeholder="Ingresa un numero">
+            <h3 id="signos"></h3>
+            <input  type="number" id="segn" placeholder="Ingresa un numero">
+        </div>
+        <h2>Operaciones Disponibles</h2>
+        <div>
+            <button type="button" onclick="suma()" id="sum">SUMA</button>
+            <button type="button" onclick="resta()" id="res">RESTA</button>
+            <button type="button" onclick="multi()" id="mul">MULTIPLICACION</button>
+            <button type="button" onclick="divi()" id="div">DIVISION</button>
+        </div>
+        <div class="sig">
+            <h3>Resultado de la operacion</h3>
+            <h3 id="resul"></h3>
+        </div>
+        <div>
+            <button id="cance" type="button" onclick="cance2()">Cancelar</button>
+            <button type="reset" onclick="limp()">Limpiar</button>
+        </div>
+        <h3 id="vacio"></h3>
+    </form>
+    </body>
+    <script src="/Login_Form/js/calcu.js"></script>
+</html>
