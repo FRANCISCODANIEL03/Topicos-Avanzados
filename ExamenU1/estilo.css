@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A2C4C9;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+form{
+    background-color: #6FA8DC;
+    border-radius: 25px;
+    width: 560x;
+    height: 500px;
+}
+input{
+    margin-top: 2px;
+    height: 23px;
+    margin-left: 155px;
+}
+h3{
+    margin-top: 5px;
+    text-align: center;
+}
+button{
+    height: 30px;
+    width: 149px;
+    background-color: blue;
+    color:white;
+    margin-top: 25px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px  black;
+    margin-left: 45px;
+}
