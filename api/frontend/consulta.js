@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const tbl = document.getElementById("tbl_body");
     const tabla = document.getElementById("div_tbl");
     const btn_ocult = document.getElementById("ocult");
-    const alert = document.getElementById("aviso");
     const URL = "http://localhost:3000/";
     const limpiarTabla = () => {
         while (tbl.firstChild) {
@@ -50,28 +49,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch(URL, option)
         const respuesta = await res.json()
         if (respuesta.value == 1) {
-            Swal.fire({
-                title: respuesta.message,
-                icon: 'success',
-                confirmButtonText: 'OK',
-                customClass: {
-                    title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow',
-                    confirmButton: 'swal2-confirm-button-custom'
-                }
-            });
+            icon2 = 'success'
         } else {
-            Swal.fire({
-                title: respuesta.message,
-                icon: 'warning',
-                confirmButtonText: 'OK',
-                customClass: {
-                    title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow',
-                    confirmButton: 'swal2-confirm-button-custom'
-                }
-            });
+            icon2 = 'warning'
         }
+        Swal.fire({
+            title: respuesta.message,
+            icon: icon2,
+            confirmButtonText: 'OK',
+            customClass: {
+                title: 'swal2-title-custom',
+                popup: 'swal2-box-shadow',
+                confirmButton: 'swal2-confirm-button-custom'
+            }
+        });
     });
     consultar.addEventListener("click", async (e) => {
         e.preventDefault();
@@ -95,28 +86,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch(URL, option);
         const respuesta = await res.json();
         if (respuesta.value == 1) {
-            Swal.fire({
-                title: respuesta.message,
-                icon: 'warning',
-                confirmButtonText: 'OK',
-                customClass: {
-                    title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow',
-                    confirmButton: 'swal2-confirm-button-custom'
-                }
-            });
+            icon2 = 'success'
         } else {
-            Swal.fire({
-                title: respuesta.message,
-                icon: 'warning',
-                confirmButtonText: 'OK',
-                customClass: {
-                    title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow',
-                    confirmButton: 'swal2-confirm-button-custom'
-                }
-            });
+            icon2 = 'warning'
         }
+        Swal.fire({
+            title: respuesta.message,
+            icon: icon2,
+            confirmButtonText: 'OK',
+            customClass: {
+                title: 'swal2-title-custom',
+                popup: 'swal2-box-shadow',
+                confirmButton: 'swal2-confirm-button-custom'
+            }
+        });
     });
     eliminar.addEventListener("click", async (e) => {
         e.preventDefault();
@@ -134,27 +117,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch(URL, option);
         const respuesta = await res.json();
         if (respuesta.value == 1) {
-            Swal.fire({
-                title: respuesta.message,
-                icon: 'warning',
-                confirmButtonText: 'OK',
-                customClass: {
-                    title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow',
-                    confirmButton: 'swal2-confirm-button-custom'
-                }
-            });
+            icon2 = 'success'
         } else {
-            Swal.fire({
-                title: respuesta.message,
-                icon: 'warning',
-                confirmButtonText: 'OK',
-                customClass: {
-                    title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow',
-                    confirmButton: 'swal2-confirm-button-custom'
-                }
-            });
+            icon2 = 'warning'
         }
+        Swal.fire({
+            title: respuesta.message,
+            icon: icon2,
+            confirmButtonText: 'OK',
+            customClass: {
+                title: 'swal2-title-custom',
+                popup: 'swal2-box-shadow',
+                confirmButton: 'swal2-confirm-button-custom'
+            }
+        });
     });
 });
