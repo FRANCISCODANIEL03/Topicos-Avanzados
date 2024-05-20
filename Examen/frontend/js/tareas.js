@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const btn_mostrar = document.getElementById("btn_most");
     const URL = "http://localhost:4000/";
     btn_agregar.addEventListener("click", async (e) => {
-        e.preventDefault();
+        e.preventDefault()
         var lista = {
             tarea: tareas1.value
         };
