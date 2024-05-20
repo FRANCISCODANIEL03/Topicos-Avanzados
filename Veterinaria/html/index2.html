@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Veterinaria/css/estilo.css">
+</head>
+<body>
+    <div id="div2">
+        <img src="/Veterinaria/img/perro.png">
+        <h1>Veterinaria El Mapache</h1>
+    </div>
+    <form id="FormVet">
+        <h2>Registro</h2>
+        <div id="div3">
+            <div id="div4">
+                <h3>Nombre del dueño</h3>
+                <div class="dis">
+                    <img src="/Veterinaria/img/persona.png" alt="">
+                    <input required type="text" id="NomD">
+                </div>
+                <h3>Nombre de la mascota</h3>
+                <div class="dis">
+                    <img src="/Veterinaria/img/perro.png" alt="">
+                    <input required type="text" id="NomM">
+                </div>
+                <h3>Contacto</h3>
+                <div class="dis">
+                    <img src="/Veterinaria/img/contc.png" alt="">
+                    <input required type="text" id="Cont">
+                </div>
+                <h3>Padecimiento</h3>
+                <div class="dis">
+                    <img src="/Veterinaria/img/pad.png" alt="">
+                    <input required type="text" id="Pad">
+                </div>
+            </div>
+            <div class="dis2">
+                <h3>Agrega una foto de la mascota</h3>
+                <img id="imagenMostrada" src="#" alt="Vista previa" style="display: none;">
+                <input required type="file" name="" id="imagenInput">
+                <button type="submit">Registrar</button>
+            </div>
+        </div>
+    </form>
+    <form id="form2">
+        <div id="datosMostrados"></div>
+        <img src="#" alt="Imagen Mascota" id="imagenMostrada2" style="display: none;">
+    </form>
+</body>
+<script src="/Veterinaria/js/Vet.js"></script>
+</html>
