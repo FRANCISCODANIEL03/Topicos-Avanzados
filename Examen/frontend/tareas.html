@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./est_tereas.css">
     <title>Tareas</title>
+    <link rel="stylesheet" href="./est_tereas.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <form id="form1">
+    <form>
         <h1>Administrador de tareas</h1>
         <h3>Tareas disponibles</h3>
         <input type="text" placeholder="Ingresa una tarea" id="tareas">
-        <button type="submit">Agregar tarea</button>
-        <button id="btn_2">Mostrar tareas</button>
-        <h4 id="msj"></h4>
+        <button id="btn_add">Agregar tarea</button>
+        <button id="btn_most">Mostrar tareas</button>
     </form>
     <div id="listaTareas" style="display: none;">
         <div id="tareas2">

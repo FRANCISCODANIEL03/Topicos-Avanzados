@@ -9,21 +9,27 @@ app.use(express.json());
 app.listen(4000,()=>console.log("Servidor creado en el puerto 4000"));
 
 let listT = [];
-app.get("/tareas",(req,res)=>{
+app.get("/",(req,res)=>{
     if(listT.length == 0){
-        res.json({aviso: "Lista vacia"})
+        res.json({
+            msg: "Lista vacia",
+            value: 2
+        })
     }
     res.json({listT});
 });
-app.post("/addtarea",(req,res)=>{
+app.post("/",(req,res)=>{
     const {tarea} = req.body;
-    console.log(tarea)
-    
-    if(isNaN(tarea)){
-        return res.json({msg: "tarea vacia"});
+    if(tarea == ""){
+        return res.json({
+            msg: "tarea vacia",
+            value: 2
+        });
+    }else{
+    listT.push(tarea);
+    res.status(200).json({
+        msg: "tarea agregada correcta",
+        value: 1
+    });
     }
-    const nuevaTarea = { tarea};
-        listT.push(nuevaTarea);
-        console.log(listT)
-    res.status(201).json({msg: "tarea agregada correcta", listT});
-})
+});

@@ -1,5 +1,4 @@
-
-document.addEventListener("DOMContentLoaded", async ()=>{
+document.addEventListener("DOMContentLoaded", async () => {
     var id2 = document.getElementById("input_id");
     var nombre2 = document.getElementById("input_nom");
     const insertar = document.getElementById("btn_ins");
@@ -16,11 +15,11 @@ document.addEventListener("DOMContentLoaded", async ()=>{
             tbl.removeChild(tbl.firstChild);
         }
     }
-    const extraerDat= async()=>{
+    const extraerDat = async () => {
         const datos = await fetch(URL);
         const datos2 = await datos.json();
         limpiarTabla();
-        for(let i=0;i < datos2.length;i++){
+        for (let i = 0; i < datos2.length; i++) {
             var tr = document.createElement("tr");
             var th1 = document.createElement("td");
             var th2 = document.createElement("td");
@@ -31,37 +30,37 @@ document.addEventListener("DOMContentLoaded", async ()=>{
             tbl.appendChild(tr);
         }
     }
-    btn_ocult.addEventListener("click",(e)=>{
+    btn_ocult.addEventListener("click", (e) => {
         e.preventDefault();
         tabla.style.display = "none";
     });
-    insertar.addEventListener("click",async (e)=>{
+    insertar.addEventListener("click", async (e) => {
         e.preventDefault();
-       var lista ={
-        nombre : nombre2.value
-       };
-       const lista2= JSON.stringify(lista)
-        const option={
+        var lista = {
+            nombre: nombre2.value
+        };
+        const lista2 = JSON.stringify(lista)
+        const option = {
             method: "POST",
-            headers:{
+            headers: {
                 "Content-type": "application/json"
             },
             body: lista2
         }
-        const res= await fetch(URL,option)
-        const respuesta= await res.json()
-        if(respuesta.value == 1){
+        const res = await fetch(URL, option)
+        const respuesta = await res.json()
+        if (respuesta.value == 1) {
             Swal.fire({
-               title: respuesta.message,
-               icon: 'success',
-               confirmButtonText: 'OK',
-               customClass: {
+                title: respuesta.message,
+                icon: 'success',
+                confirmButtonText: 'OK',
+                customClass: {
                     title: 'swal2-title-custom',
                     popup: 'swal2-box-shadow',
                     confirmButton: 'swal2-confirm-button-custom'
-               }
+                }
             });
-        }else{
+        } else {
             Swal.fire({
                 title: respuesta.message,
                 icon: 'warning',
@@ -74,28 +73,28 @@ document.addEventListener("DOMContentLoaded", async ()=>{
             });
         }
     });
-    consultar.addEventListener("click",async (e)=>{
+    consultar.addEventListener("click", async (e) => {
         e.preventDefault();
         tabla.style.display = "block";
         extraerDat();
     });
-    actualizar.addEventListener("click",async (e)=>{
+    actualizar.addEventListener("click", async (e) => {
         e.preventDefault();
-       var lista ={
-        id : id2.value,
-        nombre : nombre2.value
-       };
-       const lista2= JSON.stringify(lista)
-        const option={
+        var lista = {
+            id: id2.value,
+            nombre: nombre2.value
+        };
+        const lista2 = JSON.stringify(lista)
+        const option = {
             method: "PATCH",
-            headers:{
+            headers: {
                 "Content-type": "application/json"
             },
             body: lista2
         }
-        const res= await fetch(URL,option);
-        const respuesta= await res.json();
-        if(respuesta.value == 1){
+        const res = await fetch(URL, option);
+        const respuesta = await res.json();
+        if (respuesta.value == 1) {
             Swal.fire({
                 title: respuesta.message,
                 icon: 'warning',
@@ -106,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                     confirmButton: 'swal2-confirm-button-custom'
                 }
             });
-        }else{
+        } else {
             Swal.fire({
                 title: respuesta.message,
                 icon: 'warning',
@@ -119,22 +118,22 @@ document.addEventListener("DOMContentLoaded", async ()=>{
             });
         }
     });
-    eliminar.addEventListener("click",async (e)=>{
+    eliminar.addEventListener("click", async (e) => {
         e.preventDefault();
-        var lista ={
-         id : id2.value
+        var lista = {
+            id: id2.value
         };
-        const lista2= JSON.stringify(lista)
-         const option={
-             method: "DELETE",
-             headers:{
-                 "Content-type": "application/json"
-             },
-             body: lista2
-         }
-         const res= await fetch(URL,option);
-         const respuesta= await res.json();
-         if(respuesta.value == 1){
+        const lista2 = JSON.stringify(lista)
+        const option = {
+            method: "DELETE",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: lista2
+        }
+        const res = await fetch(URL, option);
+        const respuesta = await res.json();
+        if (respuesta.value == 1) {
             Swal.fire({
                 title: respuesta.message,
                 icon: 'warning',
@@ -145,7 +144,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                     confirmButton: 'swal2-confirm-button-custom'
                 }
             });
-        }else{
+        } else {
             Swal.fire({
                 title: respuesta.message,
                 icon: 'warning',
