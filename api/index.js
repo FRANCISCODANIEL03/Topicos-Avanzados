@@ -60,7 +60,8 @@ app.post("/", (req, res) => {
                 } else {
                     res.status(200).json({
                         message: "Usuario insertado correctamente",
-                        data: results
+                        data: results,
+                        value: 1
                     });
                 }
             });
