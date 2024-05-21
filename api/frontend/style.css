@@ -1,94 +1,104 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #000;
 }
+
 .swal2-title-custom {
     color: #fff;
 }
-.swal2-confirm-button-custom{
+
+.swal2-confirm-button-custom {
     color: black !important;
     background-color: #0ef !important;
 }
+
 .swal2-box-shadow {
     box-shadow: 0 0 25px #0ef;
     background: black;
     border-radius: 10px;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #000;
     box-shadow: 0 0 50px #0ef;
     border-radius: 40px;
     height: 350px;
-    width:350px;
+    width: 350px;
 }
-input{
+
+input {
     margin-left: 15px;
-    width:250px;
+    width: 250px;
     height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5PX;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
 }
-button{
+
+button {
     margin-top: 15px;
     margin-left: 10px;
-   width: 150px;
-   height: 40px;
-   background: #0ef;
-   box-shadow: 0 0 10px #0ef;
-   font-size: 16px;
-   color: #000;
-   font-weight: 500;
-   cursor: pointer;
-   border-radius: 10px;
-   border: none;
+    width: 150px;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
 }
-h1,h3{
-    color:#fff;
+
+h1,
+h3 {
+    color: #fff;
 }
-input{
+
+input {
     margin-top: 10px;
     width: 300px;
-    height:35px;
-    color:#fff;
+    height: 35px;
+    color: #fff;
     background: #000;
     border: 2px #fff solid;
 }
-#div_tbl{
+
+#div_tbl {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #000;
     box-shadow: 0 0 50px #0ef;
     border-radius: 40px;
     margin-left: 40px;
 }
-table{
+
+table {
     color: #fff;
     border: #0ef 2px solid;
     margin-left: 20px;
 }
-td{
+
+td {
     border: #0ef 2px solid;
 }
-thead{
-    background:#0ef;
-    color:#000;
-}
-#aviso{
-    padding-bottom: 10px;
+
+thead {
+    background: #0ef;
+    color: #000;
 }
