@@ -1,93 +1,107 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #000;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #000;
     box-shadow: 0 0 50px #0ef;
     border-radius: 40px;
     height: 340px;
-    width:350px;
+    width: 350px;
 }
+
 .swal2-title-custom {
     color: #fff;
 }
-.swal2-confirm-button-custom{
+
+.swal2-confirm-button-custom {
     color: black !important;
     background-color: #0ef !important;
 }
+
 .swal2-box-shadow {
     box-shadow: 0 0 25px #0ef;
     background: black;
     border-radius: 10px;
 }
-form:hover{
-    animation:animate 1s linear infinite;
+
+form:hover {
+    animation: animate 1s linear infinite;
 }
+
 @keyframes animate {
-    100%{
+    100% {
         filter: hue-rotate(360deg);
     }
-    
+
 }
-input{
+
+input {
     margin-left: 15px;
-    width:250px;
+    width: 250px;
     height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5PX;
-    color:#fff;
+    color: #fff;
     border-radius: 10px;
 }
-button{
+
+button {
     margin-top: 15px;
     margin-left: 10px;
-   width: 150px;
-   height: 40px;
-   background: #0ef;
-   box-shadow: 0 0 10px #0ef;
-   font-size: 16px;
-   color: #000;
-   font-weight: 500;
-   cursor: pointer;
-   border-radius: 10px;
-   border: none;
+    width: 150px;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
 }
-h1,h4,h3{
-    color:#fff;
+
+h1,
+h4,
+h3 {
+    color: #fff;
 }
-input{
+
+input {
     margin-top: 10px;
     width: 300px;
-    height:35px;
-    color:#fff;
+    height: 35px;
+    color: #fff;
     background: transparent;
     border: 2px #fff solid;
 }
-li{
-    color:#fff;
+
+li {
+    color: #fff;
 }
-#listaTareas{
+
+#listaTareas {
     margin-left: 40px;
 }
-.listaTareas:hover{
-    animation:animate 1s linear infinite;
+
+.listaTareas:hover {
+    animation: animate 1s linear infinite;
 }
-#tareas{
-    box-shadow:0 0  10px #0ef;
-    border:2px #fff solid;
+
+#tareas {
+    box-shadow: 0 0 10px #0ef;
+    border: 2px #fff solid;
     border-radius: 5px;
-    padding: 10px ;
+    padding: 10px;
 }
-
-
