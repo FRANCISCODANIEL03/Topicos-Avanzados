@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const tareas1 = document.getElementById("tareas");
+    const tareas2 = document.getElementById("tareas2");
     const pantalla = document.getElementById("listaTareas");
     const btn_agregar = document.getElementById("btn_add");
     const btn_mostrar = document.getElementById("btn_most");
@@ -36,38 +37,29 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
     });
+    btn_mostrar.addEventListener("click", (e) => {
+        e.preventDefault()
+        pantalla.style.display = "block";
+        mostrar();
+    });
+    const limpiarTabla = () => {
+        while (tareas2.firstChild) {
+            tareas2.removeChild(tareas2.firstChild);
+        }
+    }
+    const mostrar = async () => {
+        const datos = await fetch(URL);
+        const datos2 = await datos.json();
+        limpiarTabla();
+        for (let i = 0; i < datos2.length; i++) {
+            var li = document.createElement("li");
+            li.textContent = datos2[i];
+            tareas2.appendChild(li);
+        }
+    }
+    const btn3 = document.getElementById("btn_3");
+    btn3.addEventListener("click", (e) => {
+       e.preventDefault();
+        pantalla.style.display  = "none";
+    })
 });
-
-
-
-
-
-
-
-/*       const li = document.createElement("li")
-li.textContent = tarea
-addProduct.appendChild(li)
-
-
-const response = await fetch("http://localhost:4000/addtarea",
-   {
-       method: "POST",
-       headers: {
-           "Content-Type": "application/json"
-       },
-       body: JSON.stringify({ tarea })
-   });
-const data = await response.json();
-console.log("Tarea agregada correctamente:", data);
-aviso2.textContent = data.msg
-   });
-const btn2 = document.getElementById("btn_2");
-btn2.addEventListener("click", (e) => {
-   e.preventDefault()
-   pantalla.style.display = "block";
-})
-const btn3 = document.getElementById("btn_3");
-btn3.addEventListener("click", (e) => {
-   e.preventDefault()
-   pantalla.style.display = "none";
-})*/
