@@ -1,25 +1,29 @@
-#div3{
+#div3 {
     display: flex;
     align-items: center;
 }
-#div4{
+
+#div4 {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-img{
+
+img {
     width: 26px;
     height: 26px;
     margin-right: 5px;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #A2C4C9;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#form2{
+
+#form2 {
     background-color: #6FA8DC;
     border-radius: 25px;
     margin-top: 20px;
@@ -28,62 +32,74 @@ body{
     display: flex;
     align-items: center;
 }
-form{
+
+form {
     background-color: #6FA8DC;
     border-radius: 25px;
     width: 560x;
     height: 400px;
-    border: black 5px solid ;
+    border: black 5px solid;
 }
-.dis{
+
+.dis {
     display: flex;
     align-items: center;
 }
-#div2{
+
+#div2 {
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
-input{
+
+input {
     margin-top: 2px;
     height: 23px;
 }
-h3{
+
+h3 {
     margin-top: 5px;
     text-align: center;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-div{
+
+div {
     margin-left: 10px;
     margin-right: 10px;
 }
-#imagenMostrada{
-    width:160px;
+
+#imagenMostrada {
+    width: 160px;
     height: 140px;
     border-radius: 5px;
 }
-.dis2{
+
+.dis2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-button{
+
+button {
     height: 30px;
     width: 149px;
     background-color: blue;
-    color:white;
+    color: white;
     margin-top: 25px;
     margin-right: 10px;
-    box-shadow: 5px 5px 5px  black;
+    box-shadow: 5px 5px 5px black;
 }
-#imagenInput{
+
+#imagenInput {
     margin-top: 7px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #A2C4C9;
 }
-#imagenMostrada2{
-    width:160px;
+
+#imagenMostrada2 {
+    width: 160px;
     height: 140px;
     margin-left: 10px;
     margin-right: 10px;
