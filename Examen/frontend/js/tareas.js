@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     const btn3 = document.getElementById("btn_3");
     btn3.addEventListener("click", (e) => {
-       e.preventDefault();
-        pantalla.style.display  = "none";
+        e.preventDefault();
+        pantalla.style.display = "none";
     })
 });
