@@ -5,6 +5,17 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;  
     background-color: #000;
 }
+.swal2-title-custom {
+    color: #fff;
+}
+.swal2-button-color{
+    color: #000;
+    background-color: #0ef;
+}
+.swal2-box-shadow {
+    box-shadow: 0 0 25px #0ef;
+    background: black;
+}
 form{
     display: flex;
     justify-content: center;
@@ -18,15 +29,6 @@ form{
     height: 350px;
     width:350px;
 }
-/*form:hover{
-    animation:animate 1s linear infinite;
-}
-@keyframes animate {
-    100%{
-        filter: hue-rotate(360deg);
-    }
-    
-}*/
 input{
     margin-left: 15px;
     width:250px;
