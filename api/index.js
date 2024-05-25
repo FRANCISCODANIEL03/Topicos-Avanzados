@@ -43,7 +43,8 @@ app.post("/",(req,res)=>{
     var { nombre } = req.body;
     if(nombre == ""){
         res.json({
-            message : "Inserta un nombre"
+            message : "Inserta un nombre",
+            value: 2
         });
     }else{
     conection.query(`INSERT INTO usuarios  (nombre) VALUES (?)`,[nombre],
@@ -52,7 +53,7 @@ app.post("/",(req,res)=>{
          res.status(500).json({
          message: error.message || "No se puede hacer la insercion de datos"});
         } else {res.status(200).json({
-            message: "Datos insertados correctamente",
+            message: "Usuario insertado correctamente",
             data: results});
         }    
     });
@@ -63,7 +64,8 @@ app.patch("/", (req, res) => {
     const { id,nombre } = req.body;
     if(id == "" || nombre == ""){
         res.json({
-            message : "Algun campo esta vacio"
+            message : "Algun campo esta vacio",
+            value: 2
         });
     }else{
     conection.query(`UPDATE usuarios SET nombre = ? WHERE id = ?`, [nombre, id], (error, results) => {
@@ -74,6 +76,7 @@ app.patch("/", (req, res) => {
         } else {
             res.status(200).json({
                 message: "Usuario actualizado correctamente",
+                value: 1,
                 data: results
             });
         }
@@ -85,7 +88,8 @@ app.delete("/", (req, res) => {
     const { id } = req.body;
     if(id == ""){
         res.json({
-            message : "Inserta un id"
+            message : "Inserta un id",
+            value: 2
         });
     }else{
     conection.query(`DELETE FROM usuarios WHERE id = ?`, [id], (error, results) => {
@@ -96,6 +100,7 @@ app.delete("/", (req, res) => {
         } else {
             res.status(200).json({
                 message: "Usuario eliminado correctamente",
+                value: 1,
                 data: results
             });
         }
