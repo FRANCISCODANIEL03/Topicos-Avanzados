@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                confirmButtonText: 'OK',
                customClass: {
                     title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow'
+                    popup: 'swal2-box-shadow',
+                    confirmButton: 'swal2-confirm-button-custom'
                }
             });
         }else{
@@ -67,7 +68,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                 confirmButtonText: 'OK',
                 customClass: {
                     title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow'
+                    popup: 'swal2-box-shadow',
+                    confirmButton: 'swal2-confirm-button-custom'
                 }
             });
         }
@@ -100,7 +102,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                 confirmButtonText: 'OK',
                 customClass: {
                     title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow'
+                    popup: 'swal2-box-shadow',
+                    confirmButton: 'swal2-confirm-button-custom'
                 }
             });
         }else{
@@ -110,7 +113,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                 confirmButtonText: 'OK',
                 customClass: {
                     title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow'
+                    popup: 'swal2-box-shadow',
+                    confirmButton: 'swal2-confirm-button-custom'
                 }
             });
         }
@@ -137,7 +141,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                 confirmButtonText: 'OK',
                 customClass: {
                     title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow'
+                    popup: 'swal2-box-shadow',
+                    confirmButton: 'swal2-confirm-button-custom'
                 }
             });
         }else{
@@ -147,7 +152,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
                 confirmButtonText: 'OK',
                 customClass: {
                     title: 'swal2-title-custom',
-                    popup: 'swal2-box-shadow'
+                    popup: 'swal2-box-shadow',
+                    confirmButton: 'swal2-confirm-button-custom'
                 }
             });
         }
