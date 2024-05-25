@@ -50,12 +50,27 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         }
         const res= await fetch(URL,option)
         const respuesta= await res.json()
-        Swal.fire({
-            title: respuesta.message,
-            icon: 'success',
-            background: 'black',
-            confirmButtonText: 'Cool'
-          })
+        if(respuesta.value == 1){
+            Swal.fire({
+               title: respuesta.message,
+               icon: 'success',
+               confirmButtonText: 'OK',
+               customClass: {
+                    title: 'swal2-title-custom',
+                    popup: 'swal2-box-shadow'
+               }
+            });
+        }else{
+            Swal.fire({
+                title: respuesta.message,
+                icon: 'warning',
+                confirmButtonText: 'OK',
+                customClass: {
+                    title: 'swal2-title-custom',
+                    popup: 'swal2-box-shadow'
+                }
+            });
+        }
     });
     consultar.addEventListener("click",async (e)=>{
         e.preventDefault();
@@ -78,7 +93,27 @@ document.addEventListener("DOMContentLoaded", async ()=>{
         }
         const res= await fetch(URL,option);
         const respuesta= await res.json();
-        alert.textContent= respuesta.message;
+        if(respuesta.value == 1){
+            Swal.fire({
+                title: respuesta.message,
+                icon: 'warning',
+                confirmButtonText: 'OK',
+                customClass: {
+                    title: 'swal2-title-custom',
+                    popup: 'swal2-box-shadow'
+                }
+            });
+        }else{
+            Swal.fire({
+                title: respuesta.message,
+                icon: 'warning',
+                confirmButtonText: 'OK',
+                customClass: {
+                    title: 'swal2-title-custom',
+                    popup: 'swal2-box-shadow'
+                }
+            });
+        }
     });
     eliminar.addEventListener("click",async (e)=>{
         e.preventDefault();
@@ -95,6 +130,26 @@ document.addEventListener("DOMContentLoaded", async ()=>{
          }
          const res= await fetch(URL,option);
          const respuesta= await res.json();
-         alert.textContent= respuesta.message;
+         if(respuesta.value == 1){
+            Swal.fire({
+                title: respuesta.message,
+                icon: 'warning',
+                confirmButtonText: 'OK',
+                customClass: {
+                    title: 'swal2-title-custom',
+                    popup: 'swal2-box-shadow'
+                }
+            });
+        }else{
+            Swal.fire({
+                title: respuesta.message,
+                icon: 'warning',
+                confirmButtonText: 'OK',
+                customClass: {
+                    title: 'swal2-title-custom',
+                    popup: 'swal2-box-shadow'
+                }
+            });
+        }
     });
 });
