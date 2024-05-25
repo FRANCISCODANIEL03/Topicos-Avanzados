@@ -8,13 +8,14 @@ body{
 .swal2-title-custom {
     color: #fff;
 }
-.swal2-button-color{
-    color: #000;
-    background-color: #0ef;
+.swal2-confirm-button-custom{
+    color: black !important;
+    background-color: #0ef !important;
 }
 .swal2-box-shadow {
     box-shadow: 0 0 25px #0ef;
     background: black;
+    border-radius: 10px;
 }
 form{
     display: flex;
