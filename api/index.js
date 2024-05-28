@@ -15,11 +15,11 @@ app.listen(PORT, () => { console.log("Servidor corriendo en http://localhost:" +
 
 //conexion con mysql
 const conection = mysql.createConnection({
-    host: "localhost",
+    host: "roundhouse.proxy.rlwy.net",
     user: "root",
-    password: "FRANCISCO031147",
-    port: 3306,
-    database: "topicos"
+    password: "ihIQNmQEjowdXvqvsadUNsbaOtbgYaRZ",
+    port: 11642,
+    database: "railway"
 });
 
 conection.connect((err) => {
