@@ -20,12 +20,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         limpiarTabla();
         for (let i = 0; i < datos2.length; i++) {
             var tr = document.createElement("tr");
-            var th1 = document.createElement("td");
-            var th2 = document.createElement("td");
-            th1.textContent = datos2[i].id;
-            th2.textContent = datos2[i].nombre;
-            tr.appendChild(th1);
-            tr.appendChild(th2);
+            var td1 = document.createElement("td");
+            var td2 = document.createElement("td");
+            td1.textContent = datos2[i].id;
+            td2.textContent = datos2[i].nombre;
+            td1.classList.add("td-custom");
+            tr.appendChild(td1);
+            tr.appendChild(td2);
             tbl.appendChild(tr);
         }
     }
