@@ -114,3 +114,22 @@ thead {
     background: transparent;
     color: #fff;
 }
+/* Media Queries */
+
+@media (max-width: 600px) {
+    form, #div_tbl {
+        padding: 10px;
+        border-radius: 20px;
+        width: 90%;
+        margin: 10px;
+    }
+
+    input, button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    button {
+        max-width: none;
+    }
+}
