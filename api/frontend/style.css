@@ -38,17 +38,8 @@ form {
     border-radius: 70px 0 70px 0;
     height: 350px;
     width: 350px;
-}
-
-input {
-    margin-left: 15px;
-    width: 250px;
-    height: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5PX;
-    color: #fff;
-    border-radius: 10px;
+    min-width: 350px;
+    min-height: 350px;
 }
 
 button {
@@ -115,21 +106,11 @@ thead {
     color: #fff;
 }
 /* Media Queries */
-
-@media (max-width: 600px) {
-    form, #div_tbl {
-        padding: 10px;
-        border-radius: 20px;
-        width: 90%;
-        margin: 10px;
+@media(max-width:500px){
+    body{
+        flex-direction: column;
     }
-
-    input, button {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    button {
-        max-width: none;
+    #div_tbl{
+        margin-top: 30px;
     }
 }
