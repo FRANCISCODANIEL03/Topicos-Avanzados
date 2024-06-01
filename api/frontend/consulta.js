@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             title: respuesta.message,
             icon: icon2,
             confirmButtonText: 'OK',
+            position: "center",
             customClass: {
                 title: 'swal2-title-custom',
                 popup: 'swal2-box-shadow',
@@ -92,6 +93,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             title: respuesta.message,
             icon: icon2,
             confirmButtonText: 'OK',
+            position: "top-end",
+            timer: 1500,
             customClass: {
                 title: 'swal2-title-custom',
                 popup: 'swal2-box-shadow',
@@ -122,6 +125,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             title: respuesta.message,
             icon: icon2,
             confirmButtonText: 'OK',
+            position: "top-end",
+            timer: 1500,
             customClass: {
                 title: 'swal2-title-custom',
                 popup: 'swal2-box-shadow',
