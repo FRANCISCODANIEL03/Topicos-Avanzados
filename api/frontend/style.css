@@ -4,7 +4,7 @@ body {
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(playa.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
 }
 
@@ -23,9 +23,11 @@ body {
     background: #000;
     border-radius: 10px;
 }
-.td-custom{
+
+.td-custom {
     border-right: #fff 2px solid;
 }
+
 form {
     display: flex;
     justify-content: center;
@@ -33,10 +35,10 @@ form {
     flex-direction: column;
     padding: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     border: 3px solid #fff;
     border-radius: 70px 0 70px 0;
-    height: 350px;
+    height: 450px;
     width: 350px;
     min-width: 350px;
     min-height: 350px;
@@ -59,7 +61,8 @@ button {
 }
 
 h1,
-h3 {
+h3,
+h2 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -68,7 +71,6 @@ h3 {
 input {
     margin-top: 10px;
     width: 300px;
-    height: 35px;
     color: #fff;
     background: transparent;
     border: 2px #fff solid;
@@ -83,7 +85,7 @@ input {
     flex-direction: column;
     padding: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     border: 3px solid #fff;
     border-radius: 70px 0 70px 0;
     border-radius: 40px;
@@ -96,8 +98,8 @@ table {
     margin-left: 20px;
 }
 
-td{
-    
+td {
+
     border-top: #fff 2px solid;
 }
 
@@ -105,12 +107,26 @@ thead {
     background: transparent;
     color: #fff;
 }
+
+.div_ins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn_aceptar {
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
 /* Media Queries */
-@media(max-width:500px){
-    body{
+@media(max-width:500px) {
+    body {
         flex-direction: column;
     }
-    #div_tbl{
+
+    #div_tbl {
         margin-top: 30px;
     }
 }
