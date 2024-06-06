@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    var id2 = document.getElementById("input_id");
-    var nombre2 = document.getElementById("input_nom");
-    const insertar = document.getElementById("btn_ins");
-    const consultar = document.getElementById("btn_cons");
-    const actualizar = document.getElementById("btn_act");
-    const eliminar = document.getElementById("btn_elim");
-    const tbl = document.getElementById("tbl_body");
-    const tabla = document.getElementById("div_tbl");
-    const btn_ocult = document.getElementById("ocult");
+    var id2 = document.getElementById('input_id');
+    var nombre2 = document.getElementById('input_nom');
+    const insertar = document.getElementById('btn_ins');
+    const consultar = document.getElementById('btn_cons');
+    const actualizar = document.getElementById('btn_act');
+    const eliminar = document.getElementById('btn_elim');
+    const tbl = document.getElementById('tbl_body');
+    const tabla = document.getElementById('div_tbl');
+    const btn_ocult = document.getElementById('ocult');
+    const btn_aceptar = document.getElementById('btn_aceptar');
+    const div_id = document.getElementById('div_datos1');
+    const div_nombre = document.getElementById('div_datos2');
     const URL = "https://api-topicos-v8td.onrender.com";
     let contador = 0;
     const limpiarTabla = () => {
@@ -31,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             tbl.appendChild(tr);
         }
     }
-    btn_ocult.addEventListener("click", (e) => {
+    btn_ocult.addEventListener('click', (e) => {
         e.preventDefault();
         tabla.style.display = "none";
     });
@@ -126,9 +129,44 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         });
     }
-    consultar.addEventListener("click", async (e) => {
+    consultar.addEventListener('click', (e) => {
         e.preventDefault();
         tabla.style.display = "block";
         extraerDat();
+    });
+    insertar.addEventListener('click', (e)=>{
+        e.preventDefault()
+        div_nombre.style.display = "block";
+        div_id.style.display = "none";
+        btn_aceptar.style.display = "block"
+        contador = 1;
+    });
+    actualizar.addEventListener('click', async (e)=>{
+        e.preventDefault()
+        div_id.style.display = "block"
+        div_nombre.style.display = "block";
+        btn_aceptar.style.display = "block"
+        contador = 2
+    });
+    eliminar.addEventListener('click', async (e)=>{
+        e.preventDefault()
+        div_id.style.display = "block";
+        div_nombre.style.display = "none";
+        btn_aceptar.style.display = "block"
+        contador = 3
+    });
+    btn_aceptar.addEventListener('click', (e)=>{
+        e.preventDefault();
+        switch(contador){
+            case 1:
+                insertarDat();
+                break;
+            case 2:
+                actualizardat();
+                break;
+            case 3:
+                eliminarDat();
+                break;
+        }
     });
 });
