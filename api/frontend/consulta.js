@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const tabla = document.getElementById("div_tbl");
     const btn_ocult = document.getElementById("ocult");
     const URL = "https://api-topicos-v8td.onrender.com";
+    let contador = 0;
     const limpiarTabla = () => {
         while (tbl.firstChild) {
             tbl.removeChild(tbl.firstChild);
@@ -34,8 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         e.preventDefault();
         tabla.style.display = "none";
     });
-    insertar.addEventListener("click", async (e) => {
-        e.preventDefault();
+    const insertarDat = async () => {
         var lista = {
             nombre: nombre2.value
         };
@@ -64,14 +64,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 confirmButton: 'swal2-confirm-button-custom'
             }
         });
-    });
-    consultar.addEventListener("click", async (e) => {
-        e.preventDefault();
-        tabla.style.display = "block";
-        extraerDat();
-    });
-    actualizar.addEventListener("click", async (e) => {
-        e.preventDefault();
+    }
+    const actualizardat = async () => {
         var lista = {
             id: id2.value,
             nombre: nombre2.value
@@ -101,9 +95,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 confirmButton: 'swal2-confirm-button-custom'
             }
         });
-    });
-    eliminar.addEventListener("click", async (e) => {
-        e.preventDefault();
+    }
+    const eliminarDat = async () => {
         var lista = {
             id: id2.value
         };
@@ -132,5 +125,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 confirmButton: 'swal2-confirm-button-custom'
             }
         });
+    }
+    consultar.addEventListener("click", async (e) => {
+        e.preventDefault();
+        tabla.style.display = "block";
+        extraerDat();
     });
 });
