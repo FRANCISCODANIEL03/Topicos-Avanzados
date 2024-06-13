@@ -3,8 +3,7 @@ const assets = [
     "/",
     "/index.html",
     "/style.css",
-    "/consulta.js",
-    "/playa.jpg"
+    "/consulta.js"
 ];
 self.addEventListener("install",(installEvent)=>{
     installEvent.waitUntil(
