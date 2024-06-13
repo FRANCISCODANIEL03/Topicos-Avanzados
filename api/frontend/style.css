@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    font-family: 'Montserrat',sans-serif;
+* {
+    font-family: 'Montserrat', sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2,#c9d6ff);
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
 .swal2-title-custom {
@@ -20,7 +21,7 @@ body {
     color: #fff !important;
     font-size: 12px !important;
     padding: 10px 45px !important;
-    border:1px solid transparent !important;
+    border: 1px solid transparent !important;
     border-radius: 8px !important;
     font-weight: 600 !important;
     letter-spacing: 0.5px !important;
@@ -47,20 +48,20 @@ form {
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-    overflow: hidden;
     height: auto;
     width: 350px;
     min-width: 350px;
     min-height: 350px;
+    margin-top: 7%;
 }
+
 
 button {
     background-color: #512dab;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
-    border:1px solid transparent;
+    border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -79,7 +80,7 @@ h2 {
 input {
     background-color: gainsboro;
     border: none;
-    margin:8px 0;
+    margin: 8px 0;
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
@@ -98,6 +99,7 @@ input {
     border-radius: 70px 0 70px 0;
     border-radius: 40px;
     margin-left: 40px;
+    margin-top: 7%;
 }
 
 table {
