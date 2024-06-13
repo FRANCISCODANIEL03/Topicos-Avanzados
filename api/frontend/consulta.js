@@ -134,30 +134,30 @@ document.addEventListener("DOMContentLoaded", async () => {
         tabla.style.display = "block";
         extraerDat();
     });
-    insertar.addEventListener('click', (e)=>{
+    insertar.addEventListener('click', (e) => {
         e.preventDefault()
         div_nombre.style.display = "block";
         div_id.style.display = "none";
         btn_aceptar.style.display = "block"
         contador = 1;
     });
-    actualizar.addEventListener('click', async (e)=>{
+    actualizar.addEventListener('click', async (e) => {
         e.preventDefault()
         div_id.style.display = "block"
         div_nombre.style.display = "block";
         btn_aceptar.style.display = "block"
         contador = 2
     });
-    eliminar.addEventListener('click', async (e)=>{
+    eliminar.addEventListener('click', async (e) => {
         e.preventDefault()
         div_id.style.display = "block";
         div_nombre.style.display = "none";
         btn_aceptar.style.display = "block"
         contador = 3
     });
-    btn_aceptar.addEventListener('click', (e)=>{
+    btn_aceptar.addEventListener('click', (e) => {
         e.preventDefault();
-        switch(contador){
+        switch (contador) {
             case 1:
                 insertarDat();
                 break;
